@@ -1,0 +1,4 @@
+--patch-module
+com.khoa.kiemthu=_
+--add-reads
+com.khoa.kiemthu=ALL-UNNAMED

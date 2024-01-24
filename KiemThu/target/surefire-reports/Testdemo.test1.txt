@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Testdemo.test1
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.802 s <<< FAILURE! - in Testdemo.test1
+testEdit  Time elapsed: 0.038 s  <<< ERROR!
+java.sql.SQLException: Incorrect integer value: 'Tét edits' for column 'soluong' at row 1
+	at com.khoa.kiemthu/Testdemo.test1.Edit(test1.java:325)
+	at com.khoa.kiemthu/Testdemo.test1.testEdit(test1.java:350)
+
+Edit{String, String, String, String, String, String}  Time elapsed: 0.003 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.String a1] in method [public void Testdemo.test1.Edit(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.sql.SQLException].
+

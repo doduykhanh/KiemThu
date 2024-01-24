@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.khoa.kiemthu.AdminController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="601.0" prefWidth="226.0" style="-fx-background-color: #ffd7d8;">
+         <children>
+            <Button layoutX="14.0" layoutY="328.0" mnemonicParsing="false" onAction="#themhanghoa" prefHeight="26.0" prefWidth="166.0" text="Thêm" />
+            <Button layoutX="14.0" layoutY="391.0" mnemonicParsing="false" onAction="#suaHang" prefHeight="26.0" prefWidth="166.0" text="Sửa" />
+            <Text layoutX="39.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="137.8125">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tf0" layoutX="18.0" layoutY="70.0" prefHeight="26.0" prefWidth="166.0" promptText="ID" />
+            <Button fx:id="dangky" layoutX="14.0" layoutY="494.0" mnemonicParsing="false" onAction="#dangKyUser" prefHeight="56.0" prefWidth="166.0" style="-fx-background-color: #ffb39a;" text="Thêm User" textAlignment="CENTER" textFill="#594141">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tf1" layoutX="18.0" layoutY="108.0" prefHeight="26.0" prefWidth="166.0" promptText="Tên hàng" />
+      <TextField fx:id="tf2" layoutX="18.0" layoutY="146.0" prefHeight="26.0" prefWidth="166.0" promptText="Giá" />
+      <TextField fx:id="tf3" layoutX="18.0" layoutY="182.0" prefHeight="26.0" prefWidth="166.0" promptText="Xuất xứ" />
+      <TextField fx:id="tf4" layoutX="18.0" layoutY="220.0" prefHeight="26.0" prefWidth="166.0" promptText="Khuyến mãi" />
+      <TextField fx:id="tf5" layoutX="17.0" layoutY="259.0" onAction="#themhanghoa" prefHeight="26.0" prefWidth="166.0" promptText="Số lượng" />
+      <TableView fx:id="table" layoutX="227.0" layoutY="92.0" prefHeight="496.0" prefWidth="669.0" />
+      <TextField fx:id="txtkw" layoutX="399.0" layoutY="38.0" prefHeight="47.0" prefWidth="361.0" promptText="Nhập từ khóa" />
+      <Text fill="#cf3535" layoutX="285.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" wrappingWidth="103.73675537109375">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
